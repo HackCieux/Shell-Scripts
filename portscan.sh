@@ -27,8 +27,7 @@ function portcheck
 {
 for ((counter=$startport; counter<=$stopport; counter++))
 do
-(echo >/dev/tcp/$host/$counter) > /dev/null 2>&1 && echo "$counter
-open"
+(echo >/dev/tcp/$host/$counter) > /dev/null 2>&1 && echo "$counter open"
 done
 }
 
